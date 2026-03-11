@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: promoCardsGrid
+name: Promo Cards Grid
+icon: layout-grid
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: cards
+    name: Cards
+    allowedComponents:
+      - promoCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2026-03-10T14:40:22.238661+00:00'
+updated: '2026-03-10T17:26:58.36334+00:00'

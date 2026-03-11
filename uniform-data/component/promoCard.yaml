@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: promoCard
+name: Promo Card
+icon: square
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Card headline
+    typeConfig: null
+  - id: description
+    name: Description
+    type: text
+    helpText: Card description text
+  - id: image
+    name: Image
+    type: asset
+    helpText: Card image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: buttonText
+    name: Button Text
+    type: text
+    helpText: Call-to-action button text
+  - id: buttonUrl
+    name: Button URL
+    type: link
+    helpText: Link for the button
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-03-10T14:40:22.09597+00:00'
+updated: '2026-03-10T17:23:22.688845+00:00'

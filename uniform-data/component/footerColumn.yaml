@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: footerColumn
+name: Footer Column
+icon: layout
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Column heading
+useTeamPermissions: true
+slots:
+  - id: links
+    name: Links
+    allowedComponents:
+      - footerLink
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2026-03-10T14:45:03.69593+00:00'
+updated: '2026-03-10T14:45:03.69593+00:00'

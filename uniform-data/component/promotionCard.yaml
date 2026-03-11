@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: promotionCard
+name: Promotion Card
+icon: gift
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Promotion name displayed below the image
+    typeConfig: null
+  - id: image
+    name: Image
+    type: asset
+    helpText: Promotional graphic (recommended 4:3 aspect ratio)
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: imageUrl
+    name: Image URL
+    type: text
+    helpText: External image URL (fallback if no asset selected)
+  - id: url
+    name: URL
+    type: link
+    helpText: Link to promotion details page
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-03-10T15:27:05.559266+00:00'
+updated: '2026-03-10T17:26:16.758416+00:00'

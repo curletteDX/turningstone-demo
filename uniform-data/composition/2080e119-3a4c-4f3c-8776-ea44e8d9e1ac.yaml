@@ -1,0 +1,932 @@
+composition:
+  _name: Homepage
+  _id: 2080e119-3a4c-4f3c-8776-ea44e8d9e1ac
+  _slug: /
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Turning Stone Resort Casino | Award-Winning Upstate NY Resort
+  slots:
+    header:
+      - _id: cf25f500-f754-4f82-8972-9674814b66b5
+        type: header
+        slots:
+          navLinks:
+            - _id: 88393a10-4a61-470f-86b4-1b5cffd14153
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /casino
+                    type: url
+                label:
+                  type: text
+                  value: CASINO
+            - _id: 85be25f8-9eec-4ee0-af7b-d2f77fe5e0d9
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /sports
+                    type: url
+                label:
+                  type: text
+                  value: SPORTS BOOK
+            - _id: 8dce930f-ae5c-4b8b-b274-a2bff3380d35
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /accommodations
+                    type: url
+                label:
+                  type: text
+                  value: ACCOMMODATIONS
+            - _id: 2d78a0ee-0625-48c6-96b1-b4bd017acac5
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /dining
+                    type: url
+                label:
+                  type: text
+                  value: DINING & DRINKS
+            - _id: 294b5a2d-b509-44e3-98c4-03b2e9cf946e
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /entertainment
+                    type: url
+                label:
+                  type: text
+                  value: ENTERTAINMENT
+    content:
+      - _id: 7fe1a44d-f635-4d64-b817-de82e753cd3b
+        type: heroCarousel
+        slots:
+          slides:
+            - _id: 1c171fb5-ad9f-4321-a51a-f6da2eea12d3
+              type: heroSlide
+              parameters:
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /promotions
+                    type: url
+                overlayOpacity:
+                  type: number
+                  value: 0
+                backgroundImage:
+                  type: asset
+                  value:
+                    - _id: 9ac1cad6-d669-43d5-bc07-876241b45aec
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 215d32be-9696-4031-9f42-5396417b634c
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/ciOa-70-Rj-cg8VjP1Tehw-gaming-promos.webp
+                          type: text
+                        size:
+                          value: 239266
+                          type: number
+                        title:
+                          type: text
+                          value: gaming-promos.webp
+                        width:
+                          value: 3200
+                          type: number
+                        height:
+                          value: 1200
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+            - _id: af7ad9f9-1c74-47a9-b446-abf3d124fc22
+              type: heroSlide
+              parameters:
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /poker
+                    type: url
+                overlayOpacity:
+                  type: number
+                  value: 40
+                backgroundImage:
+                  type: asset
+                  value:
+                    - _id: 5470d9aa-2a6e-46dd-a460-c64d18e93bb9
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 1186aa8b-1260-4253-8a87-d43bf00e313e
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/rWO4wddPSDmXwTG56dRwLQ-world-series-poker.webp
+                          type: text
+                        size:
+                          value: 21212
+                          type: number
+                        title:
+                          type: text
+                          value: world-series-poker.webp
+                        width:
+                          value: 369
+                          type: number
+                        height:
+                          value: 246
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+            - _id: a6fd9618-d271-4b66-ad0e-c6875a82ced6
+              type: heroSlide
+              parameters:
+                title:
+                  type: text
+                  value: The Crescent & Salt
+                subtitle:
+                  type: text
+                  value: Opening June 29 • A New Chapter in Luxury
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /crescent
+                    type: url
+                buttonText:
+                  type: text
+                  value: DISCOVER MORE
+                overlayOpacity:
+                  type: number
+                  value: 40
+      - _id: 5d661f30-1f20-46a6-bada-bb1a11a9fb69
+        type: promoCardsGrid
+        slots:
+          cards:
+            - _id: 6d90c715-cb8a-46d5-bc2f-51a146c6eeea
+              type: promoCard
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: cbdb9de0-c547-4850-9edd-cd762d26fd8b
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 1051e688-6892-49bf-b294-ea5a1439c88b
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/6p3d2jGIS4SFwqJVMgx9Wg-card-walk-in.webp
+                          type: text
+                        file:
+                          type: file
+                          value: dd8e9b62-3a65-488d-8cc3-01ca60df8328
+                        size:
+                          value: 28239
+                          type: number
+                        title:
+                          type: text
+                          value: card-walk-in.webp
+                        width:
+                          value: 370
+                          type: number
+                        height:
+                          value: 246
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Walk-in Wednesdays - Grow Your Career!
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /careers
+                    type: url
+                buttonText:
+                  type: text
+                  value: LEARN MORE
+                description:
+                  type: text
+                  value: >-
+                    Grow your career at Turning Stone! The Crescent and Salt
+                    debut June 29. Apply easily on Walk-In Wednesdays.
+            - _id: bda57871-4a96-45fa-a199-1759cd18bdef
+              type: promoCard
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: 08f5233f-ad10-42af-956b-ef08bce6a9f4
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 54bc3fca-4d46-4005-a295-5479db3e1398
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/c19S0CQWQCmj6GwmTWjSXA-promo-pot-o-gold.webp
+                          type: text
+                        size:
+                          value: 46725
+                          type: number
+                        title:
+                          type: text
+                          value: promo-pot-o-gold.webp
+                        width:
+                          value: 369
+                          type: number
+                        height:
+                          value: 246
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+                title:
+                  type: text
+                  value: 2026 World Series of Poker Circuit Events
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /poker
+                    type: url
+                buttonText:
+                  type: text
+                  value: LEARN MORE
+                description:
+                  type: text
+                  value: >-
+                    Poker's top Circuit returns to Turning Stone Resort Casino,
+                    March 12 – 23, with over $2.5 million guaranteed.
+            - _id: 982bba30-c35e-4085-bbd0-f00b169fbc49
+              type: promoCard
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: 6f7ea01f-df94-4d7c-8ce5-e0a74fcb00db
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 89fb101f-2477-45ef-99e2-f10c8d0b12f9
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/dWlS_qExTsKonDqsAmRFpQ-promo-shamrock.webp
+                          type: text
+                        size:
+                          value: 43881
+                          type: number
+                        title:
+                          type: text
+                          value: promo-shamrock.webp
+                        width:
+                          value: 369
+                          type: number
+                        height:
+                          value: 246
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+                title:
+                  type: text
+                  value: $35,000 Shamrock Shuffle Drawing
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /promotions/shamrock
+                    type: url
+                buttonText:
+                  type: text
+                  value: LEARN MORE
+                description:
+                  type: text
+                  value: >-
+                    Earn entries now through March 17 for your chance to win up
+                    to $5,000 Free Play!
+            - _id: c77db74b-fa2a-4d6a-815e-cbb201c0b547
+              type: promoCard
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: 59380c38-f88a-43b0-928d-b4b2d04be5c5
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 3564449b-71b6-4dbf-b7a6-463a94273075
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/wAZ0K0HoS6a2HWQQH4A27w-card-hops-madness.jpg
+                          type: text
+                        size:
+                          value: 21947
+                          type: number
+                        title:
+                          type: text
+                          value: card-hops-madness.jpg
+                        width:
+                          value: 369
+                          type: number
+                        height:
+                          value: 246
+                          type: number
+                        mediaType:
+                          value: image/jpeg
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+                title:
+                  type: text
+                  value: Hoops Madness - Teasers, Parlays, Futures & More
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /sports/hoops
+                    type: url
+                buttonText:
+                  type: text
+                  value: LEARN MORE
+                description:
+                  type: text
+                  value: >-
+                    From parlays to teaser bets, there's a wager for everyone at
+                    TS Sports! Place your bets March 17 - April 6.
+      - _id: 369c4728-db30-40f9-a20e-bb269c39ef7a
+        type: categoryCardsGrid
+        slots:
+          cards:
+            - _id: ea093d1e-c4f5-4440-a9ee-35c00b063eb9
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /casino
+                    type: url
+                title:
+                  type: text
+                  value: CASINO
+                backgroundImage:
+                  type: asset
+                  value:
+                    - _id: 8ee53565-09e8-4a4d-9772-a39b8e08f863
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: d4c996b4-3f93-426a-aedf-0b8cd17a9245
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/7FrkxF88QyC0C9HEgnEJqA-category-card-casino.webp
+                          type: text
+                        size:
+                          value: 37255
+                          type: number
+                        title:
+                          type: text
+                          value: category-card-casino.webp
+                        width:
+                          value: 317
+                          type: number
+                        height:
+                          value: 259
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+            - _id: 1b6ed480-262f-4fbc-be9e-34212e754607
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /sports
+                    type: url
+                backgroundImage:
+                  type: asset
+                  value:
+                    - _id: 4a045f5e-78f4-4109-aea0-9367289d88ec
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: e7a44377-96df-4d9e-b45f-3b5f2bf31454
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/iZqzS1IRS4ajBa4cEqzthA-category-card-sports.webp
+                          type: text
+                        size:
+                          value: 24024
+                          type: number
+                        title:
+                          type: text
+                          value: category-card-sports.webp
+                        width:
+                          value: 651
+                          type: number
+                        height:
+                          value: 259
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+            - _id: 087ebf37-6333-4dea-9f11-31d6cfa97eb1
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /promotions
+                    type: url
+                title:
+                  type: text
+                  value: CASINO PROMOTIONS
+                backgroundImage:
+                  type: asset
+                  value:
+                    - _id: 5b79955a-3f7a-428d-83ec-341a8ba9bbfe
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: be19b184-599d-497b-9668-78eda9500434
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/zGEVHaGHSNuaZwQp1_3Kkg-category-card-casino-promos.webp
+                          type: text
+                        size:
+                          value: 27926
+                          type: number
+                        title:
+                          type: text
+                          value: category-card-casino-promos.webp
+                        width:
+                          value: 317
+                          type: number
+                        height:
+                          value: 259
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+            - _id: e443f1d9-e0c4-402a-8e44-8c5ecd0509dd
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /accommodations
+                    type: url
+                title:
+                  type: text
+                  value: ACCOMMODATIONS
+                backgroundImage:
+                  type: asset
+                  value:
+                    - _id: f2c4adb8-c2f4-4b49-acb2-046f5a488f11
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 8a905aa2-445e-4a78-811c-12acf8139d41
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/6sTqJRgRS4alPUgbG18GvA-category-card-accomodations.webp
+                          type: text
+                        size:
+                          value: 32010
+                          type: number
+                        title:
+                          type: text
+                          value: category-card-accomodations.webp
+                        width:
+                          value: 651
+                          type: number
+                        height:
+                          value: 260
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+            - _id: b846ce6c-55ea-414f-9918-5c4992fae11a
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /entertainment
+                    type: url
+                title:
+                  type: text
+                  value: ENTERTAINMENT & EVENTS
+                backgroundImage:
+                  type: asset
+                  value:
+                    - _id: 45162347-c160-4aca-94f3-52ede1869973
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 3d8038e4-014a-479c-93d8-ee9998a9f054
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/XTR3ugvBTBytyTF-oe5AWg-category-card-entertainment.webp
+                          type: text
+                        size:
+                          value: 33607
+                          type: number
+                        title:
+                          type: text
+                          value: category-card-entertainment.webp
+                        width:
+                          value: 651
+                          type: number
+                        height:
+                          value: 259
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+            - _id: 0b673602-f32c-4fbe-b61d-89cb332d19db
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /nightlife
+                    type: url
+                title:
+                  type: text
+                  value: NIGHTLIFE & LOUNGES
+                backgroundImage:
+                  type: asset
+                  value:
+                    - _id: 2f7b462b-6113-41a6-8f2f-f3963b62e8f6
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 9d386017-0e6d-4cc9-a35d-3009d9689dc1
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/ByD2UIlYQEmFAUK8CtY7wQ-category-card-nightlife.webp
+                          type: text
+                        size:
+                          value: 53217
+                          type: number
+                        title:
+                          type: text
+                          value: category-card-nightlife.webp
+                        width:
+                          value: 651
+                          type: number
+                        height:
+                          value: 260
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+      - _id: 231ed303-98b0-4854-938e-ccbb2b389304
+        type: promotionsSlider
+        slots:
+          promotionCards:
+            - _id: bcc18ddc-4db8-4522-9bc3-c274ef6ea56a
+              type: promotionCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /promotions/shamrock-shuffle
+                    type: url
+                image:
+                  type: asset
+                  value:
+                    - _id: b4dbcdf0-1e1c-4017-b075-4b93cb776125
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 89fb101f-2477-45ef-99e2-f10c8d0b12f9
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/dWlS_qExTsKonDqsAmRFpQ-promo-shamrock.webp
+                          type: text
+                        size:
+                          value: 43881
+                          type: number
+                        title:
+                          type: text
+                          value: promo-shamrock.webp
+                        width:
+                          value: 369
+                          type: number
+                        height:
+                          value: 246
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+                title:
+                  type: text
+                  value: $35,000 Shamrock Shuffle Drawing
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80
+            - _id: b9587e6c-7cdf-431a-b060-5fb2271135b1
+              type: promotionCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /promotions/match-pack
+                    type: url
+                image:
+                  type: asset
+                  value:
+                    - _id: 31b28091-170f-4afd-bde1-ee4f5befa3e3
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 29ea4e60-3198-4316-9f0e-e7992de4fb1e
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/RtZOR3P7TCWO5a0hjWtg3g/mGBatnsdQFW5ain8nJJQlw-promo-double-payout.webp
+                          type: text
+                        size:
+                          value: 73812
+                          type: number
+                        title:
+                          type: text
+                          value: promo-double-payout.webp
+                        width:
+                          value: 570
+                          type: number
+                        height:
+                          value: 380
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                      _overrides:
+                        fields: {}
+                title:
+                  type: text
+                  value: Match Your Pack and Double Payout
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=400&q=80
+            - _id: ebf3df4a-1cfb-4b3e-bdc4-d6ecde35c38d
+              type: promotionCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /promotions/dark-bingo
+                    type: url
+                title:
+                  type: text
+                  value: Mark in the Dark Bingo
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=400&q=80
+            - _id: 64de2188-1b76-4ead-8549-62eed4e7f90d
+              type: promotionCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /promotions/green-party
+                    type: url
+                title:
+                  type: text
+                  value: Green Party Weekend Slots Bonus
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80
+        parameters:
+          title:
+            type: text
+            value: CASINO PROMOTIONS
+          description:
+            type: text
+            value: >-
+              Browse through some of our exciting upcoming casino promotions,
+              poker tournaments, and bingo games.
+      - _id: 0f1138d9-499b-43e2-93a5-6386f1140b9a
+        type: eventsSection
+        slots:
+          events:
+            - _id: e880ce86-756b-4d0f-8e13-5cc3dbbe33e7
+              type: eventCard
+              parameters:
+                genre:
+                  type: text
+                  value: Country
+                title:
+                  type: text
+                  value: Warren Zeiders World Tour 2026
+                venue:
+                  type: text
+                  value: The Event Center at 7:30pm
+                eventDate:
+                  type: date
+                  value: '2026-03-28'
+                ticketsUrl:
+                  type: link
+                  value:
+                    path: /tickets/warren-zeiders
+                    type: url
+                moreInfoUrl:
+                  type: link
+                  value:
+                    path: /entertainment/warren-zeiders
+                    type: url
+            - _id: 5cd25feb-05a3-416e-88a4-f79ba1ff107e
+              type: eventCard
+              parameters:
+                genre:
+                  type: text
+                  value: Comedy
+                title:
+                  type: text
+                  value: Sebastian Maniscalco
+                venue:
+                  type: text
+                  value: The Event Center at 8:00pm
+                eventDate:
+                  type: date
+                  value: '2026-04-18'
+                ticketsUrl:
+                  type: link
+                  value:
+                    path: /tickets/sebastian-maniscalco
+                    type: url
+                moreInfoUrl:
+                  type: link
+                  value:
+                    path: /entertainment/sebastian-maniscalco
+                    type: url
+            - _id: 6632fd32-6315-40c5-8efe-c7b6305ea87e
+              type: eventCard
+              parameters:
+                genre:
+                  type: text
+                  value: Tribute
+                title:
+                  type: text
+                  value: Joey Belladonna of Anthrax
+                venue:
+                  type: text
+                  value: The Showroom at 8:00pm
+                eventDate:
+                  type: date
+                  value: '2026-05-02'
+                ticketsUrl:
+                  type: link
+                  value:
+                    path: /tickets/joey-belladonna
+                    type: url
+                moreInfoUrl:
+                  type: link
+                  value:
+                    path: /entertainment/joey-belladonna
+                    type: url
+        parameters:
+          title:
+            type: text
+            value: ENTERTAINMENT EVENTS
+          subtitle:
+            type: text
+            value: >-
+              We always have a showstopping lineup of entertainment. Take a look
+              to see what is coming up next.
+      - _id: 800c7a89-3680-4dc4-b0e0-a1ac51dfcfec
+        type: contentSection
+        parameters:
+          body:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Join us at New York's most awarded four-season resort
+                          destination. You'll experience world-class gaming,
+                          dining, hotel stays, recreation and so much more. You
+                          will not only be surprised by all you can see, do and
+                          experience here, but also by all we do for you.
+                          Whether you're a poker player or a golf lover, a fan
+                          of bingo or fine dining, you'll find more ways to play
+                          - more reasons to get away - at Turning Stone.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          We offer uncompromising hospitality, spa, golf, dining
+                          and gaming options to meet every budget. From an
+                          affordable overnight at the Inn to a luxury, all-suite
+                          getaway at The Lodge at Turning Stone, our commitment
+                          to meeting guest expectations never wavers. Turning
+                          Stone currently has seven award-winning restaurants
+                          serving everything from quick bites to savory
+                          three-course meals. Don't forget to practice your
+                          swing on 18 holes of PGA-level golf at Shenendoah. Or
+                          relax at the all-encompassing Skana The Spa at Turning
+                          Stone.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                direction: ltr
+          title:
+            type: text
+            value: AWARD-WINNING RESORT CASINO IN UPSTATE NEW YORK
+          subtitle:
+            type: text
+            value: GAMING. DINING. SPORTS BETTING. LODGING.
+          alignment:
+            type: select
+            value: center
+  _locales:
+    - en-US
+created: '2026-03-10T14:54:57.087522+00:00'
+modified: '2026-03-11T21:21:20.817772+00:00'
+pattern: false

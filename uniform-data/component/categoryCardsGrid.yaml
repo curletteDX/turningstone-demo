@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: categoryCardsGrid
+name: Category Cards Grid
+icon: display-grid
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: cards
+    name: Cards
+    allowedComponents:
+      - categoryCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2026-03-10T14:41:20.672439+00:00'
+updated: '2026-03-10T17:26:43.664666+00:00'

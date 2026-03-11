@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: subNavLink
+name: Sub Nav Link
+icon: link
+parameters:
+  - id: label
+    name: Label
+    type: text
+    helpText: Link text displayed in dropdown
+  - id: url
+    name: URL
+    type: link
+    helpText: Destination URL
+  - id: isHeading
+    name: Is Heading
+    type: checkbox
+    helpText: Display as section heading instead of link
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-03-10T14:37:31.916617+00:00'
+updated: '2026-03-10T14:37:31.916617+00:00'

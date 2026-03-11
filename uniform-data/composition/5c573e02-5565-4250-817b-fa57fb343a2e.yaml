@@ -1,0 +1,825 @@
+composition:
+  _name: Dining
+  _id: 5c573e02-5565-4250-817b-fa57fb343a2e
+  _slug: /dining
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: 'Turning Stone Restaurants: Fine Dining & Casual Food'
+  slots:
+    footer:
+      - _id: 0f750aeb-7a47-49ef-ad06-fb0bbe437d2a
+        type: footer
+        slots:
+          legalLinks:
+            - _id: da01b66f-e1db-4eef-b105-9300e2ea4921
+              type: footerLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /privacy
+                    type: url
+                label:
+                  type: text
+                  value: Privacy Policy
+            - _id: a68ad368-d388-420b-9999-217607ec97ce
+              type: footerLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /terms
+                    type: url
+                label:
+                  type: text
+                  value: Terms of Use
+            - _id: 4d1e7f3d-7ca0-4412-b0da-7695d76a2f7f
+              type: footerLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /responsible-gaming
+                    type: url
+                label:
+                  type: text
+                  value: Responsible Gaming
+          linkColumns:
+            - _id: 38c7cea8-5ba7-4e72-ab7e-9539229893fa
+              type: footerColumn
+              slots:
+                links:
+                  - _id: fc83adc1-2be3-438a-85de-be44f9f30d65
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /casino/slots
+                          type: url
+                      label:
+                        type: text
+                        value: Slots
+                  - _id: 27c54b5a-b3b0-485c-9caf-1bab8a18a636
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /casino/table-games
+                          type: url
+                      label:
+                        type: text
+                        value: Table Games
+                  - _id: 12b6a688-80bd-411f-8874-2906694132a1
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /casino/poker
+                          type: url
+                      label:
+                        type: text
+                        value: Poker Room
+                  - _id: 8dad09b2-2577-43fc-ac80-8d92b4c5c107
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /casino/bingo
+                          type: url
+                      label:
+                        type: text
+                        value: Bingo
+              parameters:
+                title:
+                  type: text
+                  value: CASINO
+            - _id: e350034e-731e-45cf-bc31-49ebbdfbd68c
+              type: footerColumn
+              slots:
+                links:
+                  - _id: acf9105e-1607-4ba7-a666-f84434fa9281
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /accommodations/lodge
+                          type: url
+                      label:
+                        type: text
+                        value: The Lodge
+                  - _id: 555b3888-e6e4-44aa-a11f-6fa573819bf2
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /accommodations/tower
+                          type: url
+                      label:
+                        type: text
+                        value: The Tower
+                  - _id: 703e5ef7-3708-41d2-baa2-d7b1274dfcc5
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /accommodations/inn
+                          type: url
+                      label:
+                        type: text
+                        value: The Inn
+              parameters:
+                title:
+                  type: text
+                  value: STAY
+            - _id: dad81a8b-a6f3-4a0a-804c-01a2d8e873c8
+              type: footerColumn
+              slots:
+                links:
+                  - _id: 7e357884-8120-44a0-82a6-18c3549444ba
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /dining
+                          type: url
+                      label:
+                        type: text
+                        value: Restaurants
+                  - _id: cfba7933-53a5-4ff7-899f-ba08d084cdcf
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /nightlife
+                          type: url
+                      label:
+                        type: text
+                        value: Bars & Lounges
+                  - _id: 9e7d2739-1019-4878-867f-b63da8620026
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /dining/quick
+                          type: url
+                      label:
+                        type: text
+                        value: Quick Bites
+              parameters:
+                title:
+                  type: text
+                  value: DINE
+            - _id: 7e38d7b5-51cb-4290-8982-2923b6fad5b8
+              type: footerColumn
+              slots:
+                links:
+                  - _id: d596f27a-3b1f-436f-bb06-1f3c30335da1
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /spa
+                          type: url
+                      label:
+                        type: text
+                        value: Spa
+                  - _id: 68b4b177-8fba-49c9-b862-01d9d1a9ef84
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /golf
+                          type: url
+                      label:
+                        type: text
+                        value: Golf
+                  - _id: 12dd2c0b-5938-4e37-a822-ec25b51ff12f
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /weddings
+                          type: url
+                      label:
+                        type: text
+                        value: Weddings
+                  - _id: a8ea2c8b-82e1-46ef-8a49-28a9017fb7ef
+                    type: footerLink
+                    parameters:
+                      url:
+                        type: link
+                        value:
+                          path: /meetings
+                          type: url
+                      label:
+                        type: text
+                        value: Meetings
+              parameters:
+                title:
+                  type: text
+                  value: MORE
+        parameters:
+          phone:
+            type: text
+            value: 1-800-771-7711
+          address:
+            type: text
+            value: 5218 Patrick Road, Verona, NY 13478
+          copyrightText:
+            type: text
+            value: © 2026 Oneida Indian Nation. All rights reserved.
+    header:
+      - _id: f6c1bd27-0fc3-4849-b75f-ea866f3bcb16
+        type: header
+        slots:
+          navLinks:
+            - _id: 883d5825-5197-4184-b365-da3e89af8090
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /casino
+                    type: url
+                label:
+                  type: text
+                  value: CASINO
+            - _id: a4b5e6b8-0ffb-4f20-a297-007c8346e775
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /sports
+                    type: url
+                label:
+                  type: text
+                  value: SPORTS BOOK
+            - _id: e3bab5e8-df8d-4c7b-90be-a0021da04624
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /accommodations
+                    type: url
+                label:
+                  type: text
+                  value: ACCOMMODATIONS
+            - _id: c365d393-1f18-45dc-b2c0-4316c3a5093c
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /dining
+                    type: url
+                label:
+                  type: text
+                  value: DINING & DRINKS
+            - _id: a641d9b1-8ef6-4875-8b96-cec9e452e88f
+              type: navLink
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /entertainment
+                    type: url
+                label:
+                  type: text
+                  value: ENTERTAINMENT
+        parameters:
+          loginUrl:
+            type: link
+            value:
+              path: /rewards
+              type: url
+          loginText:
+            type: text
+            value: LOGIN TO TS REWARDS
+          bookNowUrl:
+            type: link
+            value:
+              path: /book
+              type: url
+          bookNowText:
+            type: text
+            value: BOOK NOW
+    content:
+      - _id: dbfdbf47-edde-4bad-ac0b-d45017da94e3
+        type: heroCarousel
+        slots:
+          slides:
+            - _id: 63d010f1-c776-41db-92ec-78283e82d0fb
+              type: heroSlide
+              parameters:
+                title:
+                  type: text
+                  value: Dining
+                subtitle:
+                  type: text
+                  value: ''
+                overlayOpacity:
+                  type: number
+                  value: 20
+                backgroundImageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80
+      - _id: 3ebf67e2-e446-46cc-8801-d136898428d7
+        type: contentSection
+        parameters:
+          body:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Taste and toast your way around more than 20
+                          restaurants at the highly awarded Turning Stone Resort
+                          Casino, just 30 minutes from Syracuse in the heart of
+                          Upstate New York.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Repeatedly recognized as one of the top five tourist
+                          attractions in New York State, this 3400-acre Forbes
+                          Four-Star and AAA Four-Diamond destination resort is
+                          also home to Upstate NY's best restaurants – and its
+                          most vibrant restaurant scene.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                direction: ltr
+          title:
+            type: text
+            value: Award-Winning Restaurants Open Near You
+          subtitle:
+            type: text
+            value: ''
+          alignment:
+            type: select
+            value: center
+      - _id: ce945fb6-27b7-4c3b-adec-736a05c12fb7
+        type: categoryCardsGrid
+        slots:
+          cards:
+            - _id: a61e3fbf-a5b4-49e7-b7e2-a537dc8910bf
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /dining/fine-dining
+                    type: url
+                title:
+                  type: text
+                  value: FINE DINING
+                backgroundImageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80
+            - _id: a06d06d1-30ca-4bf5-9168-65718a977fe9
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /dining/casual
+                    type: url
+                title:
+                  type: text
+                  value: CASUAL DINING
+                backgroundImageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80
+            - _id: 0521fa6b-1d7e-43c5-962b-c96387e932e4
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /dining/bars
+                    type: url
+                title:
+                  type: text
+                  value: BARS & LOUNGES
+                backgroundImageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&q=80
+            - _id: b7cd15fa-fcb9-4820-a02c-1a95ce28a401
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /dining/quick-bites
+                    type: url
+                title:
+                  type: text
+                  value: QUICK BITES
+                backgroundImageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80
+            - _id: 66edc590-354d-4486-9eae-1df81c89798f
+              type: categoryCard
+              parameters:
+                url:
+                  type: link
+                  value:
+                    path: /dining/brunch
+                    type: url
+                title:
+                  type: text
+                  value: BRUNCH
+                backgroundImageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=80
+      - _id: 26f7f74a-8aa7-42d3-8be0-ec3ed5d71d20
+        type: promoCardsGrid
+        slots:
+          cards:
+            - _id: bbc75a17-be00-40fa-8259-cfd94c49bc72
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: TS Steakhouse
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/ts-steakhouse
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Bone-in Steaks, Craft Cocktails - With its penthouse views,
+                    unique craft cocktails and aged USDA Prime steaks, TS
+                    Steakhouse is a cut above the rest.
+            - _id: c2895a51-5442-4f82-b8fd-75402fa13897
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: Wildflowers
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/wildflowers
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Forbes Four-Star Fine Dining - The Forbes Four-Star and AAA
+                    4-Diamond Wildflowers is a celebration of the art and
+                    masterful craft of fine dining.
+            - _id: b2acff14-90a6-4636-94ec-b463bcd14755
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: Peach Blossom
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1617196034183-421b4917c92d?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/peach-blossom
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Elevated Asian - Get ready for a feast for the senses as our
+                    innovative chef reimagines iconic flavors with a signature
+                    spin.
+            - _id: fe49ba64-97cf-48ca-8387-0aeaf709ad04
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: Pino Bianco
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/pino-bianco
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Northern Italy Classics - Each bite at this popular osteria
+                    tells the story of northern Italy's rustic cuisine and
+                    regional specialties.
+      - _id: 5923397d-a6cb-4268-a47d-c1deb427384c
+        type: promoCardsGrid
+        slots:
+          cards:
+            - _id: 13beecd9-8af9-4bfe-8a3f-7203ca05c43a
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: NY Rec & Social Club
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/ny-rec-social
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Elevated Bites, Weekend Beats - 60+ screens, a full
+                    sportsbook, great eats, and craft drinks make this the
+                    ultimate game-day spot.
+            - _id: 53df1257-dc62-48c8-991d-444fc86fa30a
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: Tin Rooster Honky Tonk
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/tin-rooster
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Competition-worthy BBQ - With a chef sporting a Stetson
+                    who's earned his chops as a seasoned pitmaster, enjoy
+                    slow-smoked BBQ and live music.
+            - _id: e5ea46af-b31a-4915-80ce-9a7b3ef4a594
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: The Upstate Tavern
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/upstate-tavern
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Regional Brews, Pub Fare - Experience the lively energy of a
+                    classic pub with TVs and a menu that includes NY specialties
+                    and regional beers.
+            - _id: 1dad51c4-21c5-405d-8b30-ad7062673805
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: 7 Kitchens Buffet
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1567521464027-f127ff144326?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/7-kitchens
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Market-style Buffet - This metropolitan café features a
+                    variety of cuisines plus favorites from across the most
+                    popular restaurants.
+      - _id: ac5c001c-a65a-45b3-b87d-5f5d247cf655
+        type: promoCardsGrid
+        slots:
+          cards:
+            - _id: 035fe1c0-f236-4850-a7fe-28808f934dcd
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: Emerald Restaurant
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/emerald
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    24-hour Dining + Late Bites - Stop in any time for an
+                    award-winning breakfast menu, classic diner favorites, late
+                    night bites and a kids' menu.
+            - _id: 9e786b5e-2007-43b3-b42f-f14eddf52ee7
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: Sushi Sushi Restaurant
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/sushi-sushi
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Award-winning Sushi Bar - Voted Best of Dining & Nightlife
+                    2024 for the Best Sushi, enjoy fresh sashimi, nigiri, maki
+                    and noodle bowls.
+            - _id: 6c3f034e-fea5-4c93-8887-3fcfcb6ed92f
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: Tower Lounge
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/tower-lounge
+                    type: url
+                buttonText:
+                  type: text
+                  value: RESERVE NOW
+                description:
+                  type: text
+                  value: >-
+                    Bold Snacks & Beverages - Just steps from gaming, enjoy bold
+                    flavors and live DJs every Friday and Saturday night.
+            - _id: d5affa00-6b00-4fc6-ab40-6e2361ef36a7
+              type: promoCard
+              parameters:
+                title:
+                  type: text
+                  value: Opals Confectionery
+                imageUrl:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&q=80
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /dining/opals
+                    type: url
+                buttonText:
+                  type: text
+                  value: VIEW MENU
+                description:
+                  type: text
+                  value: >-
+                    Pastries, Spiked Coffees - From morning muffins to popular
+                    seasonal cakes to spiked coffees, Opals serves delights made
+                    from scratch daily.
+      - _id: 47e440a8-6183-4c19-8954-01972cc716ba
+        type: contentSection
+        parameters:
+          body:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Choose from a world-class American Steakhouse, or the
+                          scratch-made feasts at an Italian osteria. Taste how a
+                          talented chef reimagines contemporary Chinese, or
+                          another elevates French-inspired classics at a
+                          romantic Forbes Four-Star fine dining favorite. Sit
+                          down to a plate of competition-worthy BBQ ribs, or sip
+                          a swanky cocktail over impossibly fresh sushi.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                direction: ltr
+          title:
+            type: text
+            value: >-
+              Turning Stone Earns Casino Player Magazine Best Dining & Nightlife
+              for 2025
+          subtitle:
+            type: text
+            value: ''
+          alignment:
+            type: select
+            value: center
+created: '2026-03-10T17:59:00.675426+00:00'
+modified: '2026-03-10T17:59:00.675426+00:00'
+pattern: false

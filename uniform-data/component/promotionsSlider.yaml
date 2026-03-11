@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: promotionsSlider
+name: Promotions Slider
+icon: stories
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Section heading (e.g., "CASINO PROMOTIONS")
+  - id: description
+    name: Description
+    type: text
+    helpText: Brief description below the title
+useTeamPermissions: true
+slots:
+  - id: promotionCards
+    name: Promotion Cards
+    allowedComponents:
+      - promotionCard
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2026-03-10T15:27:05.57724+00:00'
+updated: '2026-03-10T17:26:29.995861+00:00'

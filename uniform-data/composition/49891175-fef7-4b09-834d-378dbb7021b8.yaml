@@ -1,0 +1,11 @@
+composition:
+  _name: Event Detail
+  _id: 49891175-fef7-4b09-834d-378dbb7021b8
+  _slug: event-detail
+  type: page
+  parameters: {}
+  _locales:
+    - en-US
+created: '2026-03-11T21:40:12.347587+00:00'
+modified: '2026-03-11T21:40:12.347587+00:00'
+pattern: false

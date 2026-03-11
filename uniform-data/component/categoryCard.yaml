@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: categoryCard
+name: Category Card
+icon: square
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Category name displayed on the card
+    typeConfig: null
+  - id: backgroundImage
+    name: Background Image
+    type: asset
+    helpText: Full-width background image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: url
+    name: URL
+    type: link
+    helpText: Link when card is clicked
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-03-10T14:41:19.771496+00:00'
+updated: '2026-03-10T17:25:15.299109+00:00'

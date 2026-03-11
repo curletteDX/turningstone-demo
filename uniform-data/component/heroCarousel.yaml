@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: heroCarousel
+name: Hero Carousel
+icon: image
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: slides
+    name: Slides
+    allowedComponents:
+      - heroSlide
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2026-03-10T14:39:06.985742+00:00'
+updated: '2026-03-10T14:39:06.985742+00:00'

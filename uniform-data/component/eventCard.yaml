@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: eventCard
+name: Event Card
+icon: calendar
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Event name
+    typeConfig: null
+  - id: venue
+    name: Venue
+    type: text
+    helpText: Venue and time info
+  - id: genre
+    name: Genre
+    type: text
+    helpText: Event genre or category
+  - id: eventDate
+    name: Event Date
+    type: date
+    helpText: Date of the event
+  - id: image
+    name: Image
+    type: asset
+    helpText: Event promotional image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: moreInfoUrl
+    name: More Info URL
+    type: link
+    helpText: Link for more information
+  - id: ticketsUrl
+    name: Tickets URL
+    type: link
+    helpText: Link to purchase tickets
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-03-10T14:42:36.301849+00:00'
+updated: '2026-03-10T17:25:53.073224+00:00'

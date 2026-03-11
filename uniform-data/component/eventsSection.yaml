@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: eventsSection
+name: Events Section
+icon: calendar
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Section heading
+  - id: subtitle
+    name: Subtitle
+    type: text
+    helpText: Section description
+useTeamPermissions: true
+slots:
+  - id: events
+    name: Events
+    allowedComponents:
+      - eventCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2026-03-10T14:42:36.363203+00:00'
+updated: '2026-03-10T14:42:36.363203+00:00'

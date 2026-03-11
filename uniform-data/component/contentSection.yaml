@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: contentSection
+name: Content Section
+icon: display-fullwidth
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Main section heading
+    typeConfig: null
+  - id: subtitle
+    name: Subtitle
+    type: text
+    helpText: Subheading text
+  - id: body
+    name: Body
+    type: richText
+    helpText: Main content body with rich text formatting
+  - id: alignment
+    name: Alignment
+    type: select
+    helpText: Text alignment
+    typeConfig:
+      options:
+        - text: Left
+          value: left
+        - text: Center
+          value: center
+        - text: Right
+          value: right
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-03-10T14:43:25.88954+00:00'
+updated: '2026-03-10T17:27:11.853115+00:00'
