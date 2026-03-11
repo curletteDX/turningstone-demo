@@ -1,49 +1,50 @@
-import {
-  type ComponentProps,
-  UniformRichText,
-  UniformText,
-} from "@uniformdev/canvas-react";
-import type { Asset } from "@uniformdev/canvas";
+import { useState, useEffect } from "react";
+import { type ComponentProps, UniformSlot } from "@uniformdev/canvas-react";
 
-type HeroProps = ComponentProps<{
-  title: string;
-  description?: string;
-  buttonText?: string;
-  backgroundImage?: Asset[];
-}>;
+type HeroCarouselProps = ComponentProps<{}>;
 
-export default function Hero({ component }: HeroProps) {
-  const backgroundImage = component.parameters?.backgroundImage?.value as Asset[] | undefined;
-  const bgUrl = backgroundImage?.[0]?.fields?.url?.value as string | undefined;
-  const buttonUrl = component.parameters?.buttonUrl?.value as { path?: string } | undefined;
+export default function HeroCarousel({ component }: HeroCarouselProps) {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = component.slots?.slides || [];
+  const slideCount = slides.length;
+
+  useEffect(() => {
+    if (slideCount <= 1) return;
+    
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slideCount);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [slideCount]);
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
 
   return (
-    <section
-      className="relative flex min-h-[60vh] items-center justify-center bg-cover bg-center px-4 py-20"
-      style={bgUrl ? { backgroundImage: `url(${bgUrl})` } : undefined}
-    >
-      {bgUrl && <div className="absolute inset-0 bg-black/40" />}
-      <div className="relative z-10 mx-auto max-w-4xl text-center">
-        <UniformText
-          className={`text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl ${bgUrl ? "text-white" : "text-gray-900"}`}
-          parameterId="title"
-          as="h1"
-          placeholder="Hero title goes here"
-        />
-        <div className={`mx-auto mt-6 max-w-2xl text-lg ${bgUrl ? "text-gray-200" : "text-gray-600"}`}>
-          <UniformRichText parameterId="description" />
-        </div>
-        {buttonUrl?.path && (
-          <div className="mt-8">
-            <a
-              href={buttonUrl.path}
-              className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-            >
-              <UniformText parameterId="buttonText" placeholder="Learn more" />
-            </a>
-          </div>
-        )}
+    <section className="relative overflow-hidden">
+      <div 
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
+        <UniformSlot name="slides" />
       </div>
+
+      {slideCount > 1 && (
+        <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`h-3 w-3 rounded-full transition-colors ${
+                index === currentSlide ? "bg-white" : "bg-white/50 hover:bg-white/75"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 }
