@@ -1,0 +1,13 @@
+id: header
+name: Header
+icon: layout
+parameters:
+  - id: siteName
+    name: Site Name
+    type: text
+    helpText: Brand name shown in header
+slots:
+  - id: navLinks
+    name: Navigation Links
+    allowedComponents:
+      - navLink

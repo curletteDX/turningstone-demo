@@ -1,0 +1,13 @@
+id: footer
+name: Footer
+icon: layout
+parameters:
+  - id: copyrightText
+    name: Copyright Text
+    type: text
+    helpText: Copyright notice displayed in footer
+slots:
+  - id: links
+    name: Footer Links
+    allowedComponents:
+      - footerLink

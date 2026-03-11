@@ -1,0 +1,24 @@
+id: hero
+name: Hero
+icon: image
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Main headline
+  - id: description
+    name: Description
+    type: text
+    helpText: Supporting text below the title
+  - id: buttonText
+    name: Button Text
+    type: text
+  - id: buttonUrl
+    name: Button URL
+    type: link
+  - id: backgroundImage
+    name: Background Image
+    type: asset
+    typeConfig:
+      allowedTypes:
+        - image

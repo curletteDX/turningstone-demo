@@ -1,0 +1,12 @@
+id: footerLink
+name: Footer Link
+icon: link
+parameters:
+  - id: label
+    name: Label
+    type: text
+    helpText: Link text displayed in footer
+  - id: url
+    name: URL
+    type: link
+    helpText: Destination URL

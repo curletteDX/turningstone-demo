@@ -1,0 +1,25 @@
+id: page
+name: Page
+icon: file-text
+canBeComposition: true
+parameters:
+  - id: pageTitle
+    name: Page Title
+    type: text
+    helpText: Title shown in browser tab
+slots:
+  - id: header
+    name: Header
+    allowedComponents:
+      - header
+    maxComponents: 1
+  - id: content
+    name: Content
+    allowedComponents:
+      - hero
+    patternsInAllowedComponents: false
+  - id: footer
+    name: Footer
+    allowedComponents:
+      - footer
+    maxComponents: 1

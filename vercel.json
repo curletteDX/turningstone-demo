@@ -1,0 +1,15 @@
+{
+  "buildCommand": "pnpm run build && mv dist/client/index.html dist/server/index.html",
+  "outputDirectory": "dist/client",
+  "functions": {
+    "api/ssr.mjs": {
+      "includeFiles": "dist/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/ssr"
+    }
+  ]
+}

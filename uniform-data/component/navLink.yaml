@@ -1,0 +1,12 @@
+id: navLink
+name: Nav Link
+icon: link
+parameters:
+  - id: label
+    name: Label
+    type: text
+    helpText: Link text displayed in navigation
+  - id: url
+    name: URL
+    type: link
+    helpText: Destination URL
