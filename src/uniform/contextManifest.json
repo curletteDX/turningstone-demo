@@ -92,22 +92,13 @@
             "type": "G",
             "clauses": [
               {
-                "type": "QS",
+                "key": "wedding",
+                "type": "QK",
                 "match": {
                   "cs": false,
                   "op": "=",
-                  "rhs": "weddings"
-                },
-                "queryName": "interest"
-              },
-              {
-                "type": "QS",
-                "match": {
-                  "cs": false,
-                  "op": "=",
-                  "rhs": "weddings"
-                },
-                "queryName": "utm-campaign"
+                  "rhs": "yes"
+                }
               }
             ]
           }
@@ -117,7 +108,7 @@
           "cap": 100,
           "dur": "p",
           "crit": {
-            "op": "&",
+            "op": "|",
             "type": "G",
             "clauses": [
               {
@@ -128,6 +119,14 @@
                   "rhs": "golf"
                 },
                 "queryName": "interest"
+              },
+              {
+                "path": {
+                  "cs": false,
+                  "op": "~",
+                  "rhs": "golfing"
+                },
+                "type": "PV"
               }
             ]
           }
