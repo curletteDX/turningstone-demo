@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: weddings
+name: Weddings
+icon: screen
+parameters:
+  - id: pageTitle
+    name: Page Title
+    type: text
+    guidance: Browser tab title for SEO
+    localizable: true
+  - id: pageMetaDescription
+    name: Page Meta Description
+    type: text
+    guidance: Meta description for SEO
+    localizable: true
+description: Composition type for wedding-related pages
+useTeamPermissions: true
+slots:
+  - id: header
+    name: Header
+    maxComponents: 1
+    allowedComponents:
+      - header
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: content
+    name: Content
+    allowedComponents:
+      - venueHero
+      - venueCard
+      - contentSection
+      - heroCarousel
+      - promoCardsGrid
+      - categoryCardsGrid
+      - packagesCarousel
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+  - id: footer
+    name: Footer
+    maxComponents: 1
+    allowedComponents:
+      - footer
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: pageTitle
+canBeComposition: true
+created: '2026-03-12T08:48:40.773053+00:00'
+updated: '2026-03-12T08:48:48.585017+00:00'

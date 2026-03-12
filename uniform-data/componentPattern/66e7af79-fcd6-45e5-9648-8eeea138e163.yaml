@@ -1,0 +1,50 @@
+composition:
+  _name: Wedding Contact Form
+  _id: 66e7af79-fcd6-45e5-9648-8eeea138e163
+  type: weddingContactForm
+  parameters:
+    email:
+      type: text
+      value: weddings@turningstone.com
+    phone:
+      type: text
+      value: 888.361.7958
+    title:
+      type: text
+      value: Request For More Information
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Fill out the form below and a member of our Weddings Team
+                    will be in contact to give you more information about
+                    weddings at Turning Stone.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: null
+              textStyle: ''
+              textFormat: 0
+          direction: null
+    submitButtonText:
+      type: text
+      value: Submit Request
+  _overridability:
+    hideLockedParameters: true
+created: '2026-03-12T10:15:33.218423+00:00'
+modified: '2026-03-12T10:15:45.207504+00:00'
+pattern: true

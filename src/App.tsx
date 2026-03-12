@@ -1,9 +1,14 @@
 import type { RootComponentInstance } from "@uniformdev/canvas";
 import { UniformComposition } from "@uniformdev/canvas-react";
-import { Context } from "@uniformdev/context";
+import {
+  Context,
+  enableContextDevTools,
+  enableDebugConsoleLogDrain,
+} from "@uniformdev/context";
 import { UniformContext } from "@uniformdev/context-react";
 import { manifest } from "@/uniform/manifest";
 import { resolveComponent } from "@/uniform/resolve";
+import UtmTracker from "@/components/UtmTracker";
 import "./App.css";
 
 declare global {
@@ -12,7 +17,11 @@ declare global {
   }
 }
 
-const context = new Context({ manifest, defaultConsent: true });
+const context = new Context({
+  manifest,
+  defaultConsent: true,
+  plugins: [enableContextDevTools(), enableDebugConsoleLogDrain("debug")],
+});
 
 export default function App({
   composition,
@@ -25,6 +34,7 @@ export default function App({
   return (
     <div>
       <UniformContext context={context}>
+        <UtmTracker />
         <UniformComposition
           data={data}
           behaviorTracking="onLoad"

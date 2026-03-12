@@ -1,0 +1,29 @@
+composition:
+  _name: Golf Course Card
+  _id: 34b48277-5194-48f8-aede-4dd125d507cd
+  type: golfCourseCard
+  parameters:
+    href:
+      type: link
+      value:
+        path: /golf/shenendoah
+        type: url
+    imageAlt:
+      type: text
+      value: Aerial view of Shenendoah Golf Course
+    overlayText:
+      type: text
+      value: Shenendoah Golf Course
+    overlayType:
+      type: select
+      value: script-title
+  _overridability:
+    parameters:
+      href: 'yes'
+      imageAlt: 'yes'
+      overlayText: 'yes'
+      overlayType: 'yes'
+    hideLockedParameters: true
+created: '2026-03-12T10:35:24.088238+00:00'
+modified: '2026-03-12T10:35:24.088238+00:00'
+pattern: true

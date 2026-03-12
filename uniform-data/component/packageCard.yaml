@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: packageCard
+name: Package Card
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Package name displayed below the image
+    localizable: true
+  - id: image
+    name: Image
+    type: asset
+    guidance: Package promotional image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: url
+    name: URL
+    type: link
+    guidance: Link to the package details page
+  - id: category
+    name: Category
+    type: select
+    guidance: Package category for filtering
+    typeConfig:
+      options:
+        - text: All
+          value: all
+        - text: Dining
+          value: dining
+        - text: Entertainment
+          value: entertainment
+        - text: Spa & Fitness
+          value: spa
+        - text: Golf & Sports
+          value: golf
+        - text: Nightlife & Lounges
+          value: nightlife
+        - text: Weddings
+          value: weddings
+        - text: Sports Book
+          value: sportsbook
+description: A card displaying a package with image and title.
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2026-03-11T22:13:21.069445+00:00'
+updated: '2026-03-11T22:13:21.069445+00:00'

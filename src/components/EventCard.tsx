@@ -21,9 +21,9 @@ export default function EventCard({ component }: EventCardProps) {
     <div className="overflow-hidden bg-white shadow-sm">
       {imageUrl && (
         <div className="aspect-video overflow-hidden">
-          <img 
-            src={imageUrl} 
-            alt="" 
+          <img
+            src={imageUrl}
+            alt=""
             className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
           />
         </div>
@@ -33,7 +33,7 @@ export default function EventCard({ component }: EventCardProps) {
           <UniformText parameterId="date" placeholder="Jan 1" />
         </p>
         <h3 className="mt-1 text-lg font-medium text-gray-900">
-          <UniformText parameterId="title" placeholder="Event Title" />
+          <UniformText parameterId="title" placeholder="" />
         </h3>
         <p className="mt-1 text-sm text-gray-500">
           <UniformText parameterId="venue" placeholder="Venue" />

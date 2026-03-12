@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: golfCourseCard
+name: Golf Course Card
+icon: screen
+parameters:
+  - id: image
+    name: Image
+    type: asset
+    guidance: High-quality image of the golf course (recommended 4:3 aspect ratio)
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: imageAlt
+    name: Image Alt
+    type: text
+    guidance: Descriptive alt text for the course image
+    localizable: true
+  - id: overlayType
+    name: Overlay Type
+    type: select
+    guidance: Style of text overlay on the card
+    typeConfig:
+      options:
+        - text: Script Title
+          value: script-title
+        - text: Badge Label
+          value: badge-label
+        - text: Logo Text
+          value: logo-text
+  - id: overlayText
+    name: Overlay Text
+    type: text
+    guidance: Primary text displayed on the card overlay
+    localizable: true
+  - id: overlaySubtext
+    name: Overlay Subtext
+    type: text
+    guidance: Secondary text for badge-label overlay type
+    localizable: true
+  - id: href
+    name: Link
+    type: link
+    guidance: URL the card links to when clicked
+description: >-
+  Card component for displaying golf courses with image backgrounds and
+  customizable overlay styles.
+useTeamPermissions: true
+slots: []
+titleParameter: imageAlt
+thumbnailParameter: image
+canBeComposition: false
+created: '2026-03-12T10:35:04.438249+00:00'
+updated: '2026-03-12T10:35:04.438249+00:00'

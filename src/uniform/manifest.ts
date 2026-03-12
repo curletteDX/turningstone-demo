@@ -1,8 +1,4 @@
-import { ManifestV2 } from "@uniformdev/context";
+import type { ManifestV2 } from "@uniformdev/context";
+import contextManifest from "./contextManifest.json";
 
-export const manifest: ManifestV2 = {
-  project: {
-    pz: { sig: {} },
-    test: {},
-  },
-};
+export const manifest: ManifestV2 = contextManifest;

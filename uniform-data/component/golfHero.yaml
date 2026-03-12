@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: golfHero
+name: Golf Hero
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Main headline for the golf hero section, e.g. 'Championship Golf'
+    localizable: true
+  - id: backgroundImage
+    name: Background Image
+    type: asset
+    guidance: High-quality aerial or landscape photo of the golf course
+    typeConfig:
+      allowedTypes:
+        - image
+description: >-
+  Full-width hero section for golf-related pages featuring a background image of
+  the championship golf course.
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: backgroundImage
+canBeComposition: false
+created: '2026-03-12T10:32:51.354698+00:00'
+updated: '2026-03-12T10:32:51.354698+00:00'

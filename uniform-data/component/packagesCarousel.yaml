@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: packagesCarousel
+name: Packages Carousel
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title, e.g. 'PACKAGES'
+    localizable: true
+  - id: showFilters
+    name: Show Filters
+    type: checkbox
+    guidance: Whether to show the category filter tabs
+description: Displays a carousel of package cards with a title and category filter tabs.
+useTeamPermissions: true
+slots:
+  - id: cards
+    name: Cards
+    allowedComponents:
+      - packageCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: title
+canBeComposition: false
+created: '2026-03-11T22:13:23.694313+00:00'
+updated: '2026-03-11T22:13:23.694313+00:00'

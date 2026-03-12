@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: venueHero
+name: Venue Hero
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Main heading for the venue page
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Subheading listing venue names
+    localizable: true
+  - id: description
+    name: Description
+    type: richText
+    guidance: Introductory paragraph about the venues
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: backgroundImage
+    name: Background Image
+    type: asset
+    guidance: Optional hero background image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: Call-to-action button text
+    localizable: true
+  - id: ctaUrl
+    name: CTA URL
+    type: link
+    guidance: Call-to-action button link
+description: >-
+  Hero section for wedding and event venue pages with title, subtitle, and
+  call-to-action
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: backgroundImage
+canBeComposition: false
+created: '2026-03-12T08:48:26.803328+00:00'
+updated: '2026-03-12T08:48:26.803328+00:00'

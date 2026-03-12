@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: eventHero
+name: Event Hero
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: The event title
+    localizable: true
+  - id: date
+    name: Date
+    type: text
+    guidance: Formatted date, e.g. 'April 24'
+  - id: time
+    name: Time
+    type: text
+    guidance: The event time, e.g. '8:00pm'
+  - id: venue
+    name: Venue
+    type: text
+    guidance: The venue name, e.g. 'The Showroom'
+    localizable: true
+  - id: category
+    name: Category
+    type: text
+    guidance: Event category, e.g. 'Tribute'
+  - id: image
+    name: Image
+    type: asset
+    guidance: Main event image displayed on the left
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: buttonText
+    name: Button Text
+    type: text
+    guidance: Text for the CTA button, e.g. 'BUY TICKETS'
+    localizable: true
+  - id: buttonUrl
+    name: Button URL
+    type: link
+    guidance: Link for the CTA button
+  - id: buttonExternalUrl
+    name: Button External URL
+    type: text
+    helpText: External URL for the button (overrides Button URL if set)
+description: >-
+  Displays event details with image on the left and title, date, time, venue,
+  category, and buy tickets button on the right.
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2026-03-11T22:13:13.775366+00:00'
+updated: '2026-03-11T22:50:33.456096+00:00'

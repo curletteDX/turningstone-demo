@@ -1,0 +1,141 @@
+composition:
+  _name: Packages
+  _id: 26d6d6de-051a-4314-8704-d7595652af53
+  type: packagesCarousel
+  parameters:
+    title:
+      type: text
+      locales:
+        en-US: PACKAGES
+    showFilters:
+      type: checkbox
+      value: 'true'
+  slots:
+    cards:
+      - _id: a245a17d-e8e2-4255-9b0c-b69c0c0f803c
+        type: packageCard
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 237bdcfb-f610-4e43-9cf8-6daf6f10f4ba
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 1798f16e-6f8d-4949-b4f2-2382352c2f48
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/9q_IVh0gS1-qEryrt-2o5Q/h7GVK_qnQaO7wz8wYtu6sg-package-champions.webp
+                    type: text
+                  file:
+                    type: file
+                    value: 7faa1ec6-a441-4170-8a52-23a6e59ed37d
+                  size:
+                    value: 36991
+                    type: number
+                  title:
+                    type: text
+                    value: package-champions.webp
+                  width:
+                    value: 369
+                    type: number
+                  height:
+                    value: 246
+                    type: number
+                  mediaType:
+                    value: image/webp
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            locales:
+              en-US: Champions Package
+      - _id: 3cc5ba3e-9625-451b-af77-d7506ddb9abc
+        type: packageCard
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 5a0eea80-49ac-410a-9bf8-9a2e9504dae1
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 7da9bdda-66e0-4ab0-93fb-c48128fcd313
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/9q_IVh0gS1-qEryrt-2o5Q/yiYG03Y_RmGHl21dtvUQ4w-package-sleep-savor.webp
+                    type: text
+                  file:
+                    type: file
+                    value: 91277435-567c-4b3d-877e-44fa2a006555
+                  size:
+                    value: 32805
+                    type: number
+                  title:
+                    type: text
+                    value: package-sleep-savor.webp
+                  width:
+                    value: 369
+                    type: number
+                  height:
+                    value: 246
+                    type: number
+                  mediaType:
+                    value: image/webp
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            locales:
+              en-US: Sleep & Savor Packages
+      - _id: ec40b74a-692e-4486-b664-b3b61aed7db5
+        type: packageCard
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: b51e47d1-a294-4395-b6b1-c01b074690d2
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 8b9a4332-2bb6-4ce9-bb23-7573c7b0a97d
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/9q_IVh0gS1-qEryrt-2o5Q/BBut3IGmTr2Gd36VYwAL1Q-package-experience.webp
+                    type: text
+                  file:
+                    type: file
+                    value: 90886def-6c4d-465b-810f-ce421f916ee5
+                  size:
+                    value: 39933
+                    type: number
+                  title:
+                    type: text
+                    value: package-experience.webp
+                  width:
+                    value: 369
+                    type: number
+                  height:
+                    value: 246
+                    type: number
+                  mediaType:
+                    value: image/webp
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            locales:
+              en-US: Experience Turning Stone Package
+  _overridability:
+    parameters:
+      title: 'yes'
+      showFilters: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2026-03-11T22:56:12.155367+00:00'
+modified: '2026-03-11T23:12:45.260798+00:00'
+pattern: true

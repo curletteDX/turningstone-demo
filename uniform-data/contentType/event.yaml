@@ -1,0 +1,102 @@
+id: event
+name: Event
+created: '2026-03-11T22:13:05.301107+00:00'
+updated: '2026-03-11T22:13:05.301107+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    guidance: The name of the event
+    localizable: true
+  - id: date
+    name: Date
+    type: date
+    guidance: The date of the event
+    localizable: false
+  - id: time
+    name: Time
+    type: text
+    guidance: The time of the event, e.g. '8:00pm'
+    localizable: false
+  - id: venue
+    name: Venue
+    type: text
+    guidance: The venue or location name, e.g. 'The Showroom'
+    localizable: true
+  - id: category
+    name: Category
+    type: select
+    guidance: The type of event
+    typeConfig:
+      options:
+        - text: Concert
+          value: concert
+        - text: Comedy
+          value: comedy
+        - text: Tribute
+          value: tribute
+        - text: Sports
+          value: sports
+        - text: Special Event
+          value: special
+    localizable: false
+  - id: description
+    name: Description
+    type: richText
+    guidance: Full description of the event with formatting
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: ticketUrl
+    name: Ticket URL
+    type: link
+    guidance: Link to purchase tickets
+    localizable: false
+  - id: image
+    name: Image
+    type: asset
+    guidance: Main event image
+    typeConfig:
+      allowedTypes:
+        - image
+    localizable: false
+entryName: title
+thumbnailField: image
+description: >-
+  An event with details like title, date, time, venue, category, description,
+  and ticket purchase link.
+icon: file-document
+type: contentType
+permissions: []
+previewConfigurations: []

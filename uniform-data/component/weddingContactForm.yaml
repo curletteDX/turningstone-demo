@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: weddingContactForm
+name: Wedding Contact Form
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Main heading for the form section
+    localizable: true
+  - id: description
+    name: Description
+    type: richText
+    guidance: Introductory text explaining the form purpose
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: email
+    name: Email
+    type: text
+    guidance: Contact email address to display
+  - id: phone
+    name: Phone
+    type: text
+    guidance: Contact phone number to display
+  - id: submitButtonText
+    name: Submit Button Text
+    type: text
+    guidance: Text for the submit button
+    localizable: true
+description: Contact form for wedding inquiries with fields for names, email, and phone
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-03-12T10:15:12.926018+00:00'
+updated: '2026-03-12T10:15:12.926018+00:00'

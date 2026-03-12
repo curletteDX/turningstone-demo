@@ -23,20 +23,20 @@ export default function HeroSlide({ component }: HeroSlideProps) {
   const showButton = buttonUrl?.path && buttonText?.trim();
 
   return (
-    <div 
+    <div
       className="relative flex min-h-[350px] w-full shrink-0 items-center justify-center bg-cover bg-center md:min-h-[450px] lg:min-h-[500px]"
       style={bgUrl ? { backgroundImage: `url(${bgUrl})` } : { backgroundColor: "#1a1a1a" }}
     >
-      <div 
-        className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-black/30" 
+      <div
+        className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-black/30"
         style={{ opacity: overlayOpacity / 100 * 2 }}
       />
-      
+
       <div className="relative z-10 mx-auto max-w-5xl text-center px-4">
         <h2 className="font-serif text-5xl text-white drop-shadow-2xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide">
-          <UniformText parameterId="title" placeholder="Events" />
+          <UniformText parameterId="title" placeholder="" />
         </h2>
-        
+
         {component.parameters?.subtitle?.value && (
           <p className="mt-4 text-lg text-white/90 md:text-xl lg:text-2xl font-light">
             <UniformText parameterId="subtitle" placeholder="" />

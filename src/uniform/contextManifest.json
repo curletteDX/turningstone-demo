@@ -1,0 +1,179 @@
+{
+  "project": {
+    "pz": {
+      "agg": {
+        "bookAWedding": {
+          "inputs": [
+            {
+              "dim": "interestWeddings"
+            }
+          ]
+        },
+        "golfing": {
+          "inputs": [
+            {
+              "dim": "interestGolf"
+            }
+          ]
+        },
+        "concerts": {
+          "inputs": [
+            {
+              "dim": "interestConcerts"
+            }
+          ]
+        },
+        "gambling": {
+          "inputs": [
+            {
+              "dim": "interestGambling"
+            }
+          ]
+        }
+      },
+      "enr": {
+        "1": {
+          "cap": 100
+        },
+        "2": {
+          "cap": 100
+        },
+        "3": {
+          "cap": 100
+        }
+      },
+      "sig": {
+        "geoNotNy": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "vc-region",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "!=",
+                  "rhs": "ny"
+                }
+              }
+            ]
+          }
+        },
+        "geoNy": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "vc-region",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "ny"
+                }
+              }
+            ]
+          }
+        },
+        "interestWeddings": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "|",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "weddings"
+                },
+                "queryName": "interest"
+              },
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "weddings"
+                },
+                "queryName": "utm-campaign"
+              }
+            ]
+          }
+        },
+        "interestGolf": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "golf"
+                },
+                "queryName": "interest"
+              }
+            ]
+          }
+        },
+        "interestConcerts": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "concerts"
+                },
+                "queryName": "interest"
+              }
+            ]
+          }
+        },
+        "interestGambling": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "gambling"
+                },
+                "queryName": "interest"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {}
+  }
+}

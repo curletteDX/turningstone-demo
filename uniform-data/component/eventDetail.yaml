@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: eventDetail
+name: Event Detail
+icon: screen
+parameters:
+  - id: pageTitle
+    name: Page Title
+    type: text
+    guidance: Browser tab title for SEO
+    localizable: true
+  - id: pageMetaDescription
+    name: Page Meta Description
+    type: text
+    guidance: Meta description for SEO
+    localizable: true
+description: Composition for displaying a full event detail page.
+useTeamPermissions: true
+slots:
+  - id: header
+    name: Header
+    allowedComponents:
+      - header
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: content
+    name: Content
+    allowedComponents:
+      - eventHero
+      - eventDescription
+      - packagesCarousel
+      - $p:26d6d6de-051a-4314-8704-d7595652af53
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: pageTitle
+canBeComposition: true
+created: '2026-03-11T22:13:29.534431+00:00'
+updated: '2026-03-11T23:16:11.118727+00:00'

@@ -1,0 +1,123 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: venueCard
+name: Venue Card
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Venue name
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Venue tagline
+    localizable: true
+  - id: description
+    name: Description
+    type: richText
+    guidance: Venue description paragraph
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: image
+    name: Image
+    type: asset
+    guidance: Venue image
+    typeConfig:
+      allowedTypes:
+        - image
+  - id: availabilityNote
+    name: Availability Note
+    type: text
+    guidance: Optional availability text like 'Available Labor Day 2026'
+    localizable: true
+  - id: features
+    name: Features
+    type: richText
+    guidance: Bullet list of venue features
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: capacityData
+    name: Capacity Data
+    type: text
+    guidance: 'JSON array of capacity rows: [{space, squareFt, seatingCapacity}]'
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: Call-to-action button text
+    localizable: true
+  - id: ctaUrl
+    name: CTA URL
+    type: link
+    guidance: Call-to-action button link
+description: >-
+  Detailed venue card with image, features list, and capacity table for wedding
+  venue pages
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2026-03-12T08:48:34.140433+00:00'
+updated: '2026-03-12T08:48:34.140433+00:00'

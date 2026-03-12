@@ -1,0 +1,66 @@
+composition:
+  _name: Site Header
+  _id: 11111da4-0ef2-4225-a65d-6a7e05711478
+  type: header
+  slots:
+    navLinks:
+      - _id: 51a88633-9275-4979-a7cb-68c925e87c13
+        type: navLink
+        parameters:
+          url:
+            type: link
+            value:
+              path: /casino
+              type: url
+          label:
+            type: text
+            value: CASINO
+      - _id: ae006384-b667-4da6-83e0-8d11d83e2b1b
+        type: navLink
+        parameters:
+          url:
+            type: link
+            value:
+              path: /sports
+              type: url
+          label:
+            type: text
+            value: SPORTS BOOK
+      - _id: 3908450c-d2f5-40ec-8ba5-eec73021330c
+        type: navLink
+        parameters:
+          url:
+            type: link
+            value:
+              path: /accommodations
+              type: url
+          label:
+            type: text
+            value: ACCOMMODATIONS
+      - _id: 4b987e54-6a86-407f-a9f7-c6eb052b724b
+        type: navLink
+        parameters:
+          url:
+            type: link
+            value:
+              path: /dining
+              type: url
+          label:
+            type: text
+            value: DINING & DRINKS
+      - _id: 512f410c-af8e-4eb7-87e4-a3bf2eaaaf38
+        type: navLink
+        parameters:
+          url:
+            type: link
+            value:
+              path: /entertainment
+              type: url
+          label:
+            type: text
+            value: ENTERTAINMENT
+  _overridability:
+    hideLockedParameters: true
+created: '2026-03-11T23:15:40.51813+00:00'
+modified: '2026-03-11T23:17:51.289186+00:00'
+pattern: true

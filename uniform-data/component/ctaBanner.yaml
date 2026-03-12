@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: ctaBanner
+name: CTA Banner
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Main headline for the banner, typically 5-10 words
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Short subtitle displayed below the title, 3-8 words
+    localizable: true
+  - id: body
+    name: Body
+    type: richText
+    guidance: Descriptive text with optional inline links
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: Button text, typically 2-4 words like 'Book Now' or 'Learn More'
+    localizable: true
+  - id: ctaLink
+    name: CTA Link
+    type: link
+    guidance: URL for the main call-to-action button
+  - id: additionalText
+    name: Additional Text
+    type: text
+    guidance: Optional secondary text below the CTA button
+    localizable: true
+  - id: additionalLinkText
+    name: Additional Link Text
+    type: text
+    guidance: Link text displayed in the additional text section
+    localizable: true
+  - id: additionalLink
+    name: Additional Link
+    type: link
+    guidance: URL for the additional link
+description: >-
+  Full-width promotional section with headline, body text, call-to-action
+  button, and award badges.
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-03-12T10:34:47.823709+00:00'
+updated: '2026-03-12T10:34:47.823709+00:00'

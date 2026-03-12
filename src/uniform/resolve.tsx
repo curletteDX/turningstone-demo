@@ -23,6 +23,14 @@ import EventHero from "@/components/EventHero";
 import EventDescription from "@/components/EventDescription";
 import PackagesCarousel from "@/components/PackagesCarousel";
 import PackageCard from "@/components/PackageCard";
+import Weddings from "@/components/Weddings";
+import VenueHero from "@/components/VenueHero";
+import VenueCard from "@/components/VenueCard";
+import WeddingContactForm from "@/components/WeddingContactForm";
+import GolfHero from "@/components/golf/GolfHero";
+import GolfCourseCard from "@/components/golf/GolfCourseCard";
+import TextWithButton from "@/components/TextWithButton";
+import CTABanner from "@/components/CTABanner";
 
 export function resolveComponent(component: ComponentInstance) {
   switch (component.type) {
@@ -72,6 +80,22 @@ export function resolveComponent(component: ComponentInstance) {
       return PackagesCarousel;
     case "packageCard":
       return PackageCard;
+    case "weddings":
+      return Weddings;
+    case "venueHero":
+      return VenueHero;
+    case "venueCard":
+      return VenueCard;
+    case "weddingContactForm":
+      return WeddingContactForm;
+    case "golfHero":
+      return GolfHero;
+    case "golfCourseCard":
+      return GolfCourseCard;
+    case "textWithButton":
+      return TextWithButton;
+    case "ctaBanner":
+      return CTABanner;
     default:
       return DefaultNotImplementedComponent;
   }

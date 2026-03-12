@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: textWithButton
+name: Text with Button
+icon: screen
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: >-
+      Main heading text, typically bold and uppercase. Example: 'Discover
+      Championship Golf at Turning Stone Resort'
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: >-
+      Smaller subtitle text with letter spacing. Example: 'Award-Winning Golf
+      Courses in Upstate New York'
+    localizable: true
+  - id: body
+    name: Body
+    type: richText
+    guidance: >-
+      Main descriptive body text. Can include inline links to related pages or
+      sections.
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: buttonText
+    name: Button Text
+    type: text
+    guidance: 'Call-to-action button label. Example: ''Book a Fitting'''
+    localizable: true
+  - id: buttonLink
+    name: Button Link
+    type: link
+    guidance: URL destination for the CTA button
+  - id: footerText
+    name: Footer Text
+    type: richText
+    guidance: Optional additional text below the button. Can include inline links.
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: showAwards
+    name: Show Awards
+    type: checkbox
+    guidance: Toggle to display award badges section below the content
+description: >-
+  A versatile intro section with heading, subtitle, body text with inline links,
+  a CTA button, and optional footer text. Ideal for golf course introductions or
+  similar promotional content.
+useTeamPermissions: true
+slots: []
+titleParameter: heading
+canBeComposition: false
+created: '2026-03-12T10:33:29.909711+00:00'
+updated: '2026-03-12T10:33:29.909711+00:00'

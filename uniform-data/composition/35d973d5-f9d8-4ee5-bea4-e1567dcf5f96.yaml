@@ -1,0 +1,156 @@
+composition:
+  _name: Event Detail
+  _id: 35d973d5-f9d8-4ee5-bea4-e1567dcf5f96
+  _slug: event-detail
+  type: page
+  slots:
+    header:
+      - _id: 3d641439-1ae1-492f-a729-ee06e2c4aab5
+        type: header
+    content:
+      - _id: 6752c9ad-c3bc-4275-8bd3-368024f3fd1f
+        type: eventHero
+        parameters:
+          date:
+            type: text
+            value: March 28
+          time:
+            type: text
+            value: 7:30pm
+          image:
+            type: asset
+            value:
+              - _id: dc3a4de8-eeea-4046-9571-044dc98202e5
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 36563189-277b-4e78-ab6a-2a49445a023d
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/9q_IVh0gS1-qEryrt-2o5Q/YrxqRvA1Tem5hH_GQzPwDA-event-warren-zeiders.webp
+                    type: text
+                  file:
+                    type: file
+                    value: ccf0238a-c042-42d0-b2c0-c837ba11ced2
+                  size:
+                    value: 35883
+                    type: number
+                  title:
+                    type: text
+                    value: event-warren-zeiders.webp
+                  width:
+                    value: 369
+                    type: number
+                  height:
+                    value: 246
+                    type: number
+                  mediaType:
+                    value: image/webp
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            locales:
+              en-US: Warren Zeiders World Tour 2026
+          venue:
+            type: text
+            locales:
+              en-US: The Event Center
+          category:
+            type: text
+            value: Country
+          buttonText:
+            type: text
+            locales:
+              en-US: Buy Tickets
+      - _id: a90ac353-566c-4168-ad99-a639d022b77a
+        type: eventDetail
+        slots:
+          content:
+            - _id: 73535c25-91ce-4c4d-b5cb-75626aafd563
+              type: eventDescription
+              parameters:
+                content:
+                  type: richText
+                  locales:
+                    en-US:
+                      root:
+                        type: root
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - type: paragraph
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - mode: normal
+                                text: >-
+                                  Warren Zeiders World Tour 2026 With Speical
+                                  Guest Kolby Cooper
+                                type: text
+                                style: ''
+                                detail: 0
+                                format: 1
+                                version: 1
+                              - type: linebreak
+                                version: 1
+                              - mode: normal
+                                text: >-
+                                  Experience one of country’s newest and most
+                                  promising stars live at The Event Center
+                                  Saturday, March 28 at 7:30pm! At just 26,
+                                  Pennsylvania native and Warner Records artist
+                                  Warren Zeiders has made an undeniable mark on
+                                  the genre, with 3.6+ billion global streams, 2
+                                  billion TikTok views and 7.9 million monthly
+                                  Spotify listeners. In 2024, he won a CMT Award
+                                  for “Breakthrough Male Music Video of the
+                                  Year,” received two People’s Choice Country
+                                  nominations and earned his first No. 1 single
+                                  with his RIAA Double Platinum-Certified
+                                  “Pretty Little Poison” (2024’s second
+                                  most-played song on country radio). Following
+                                  TV appearances with Jimmy Fallon and Kelly
+                                  Clarkson plus features in Forbes, GQ and more,
+                                  he’s touring his 2025 album, Relapse, Lies &
+                                  Betrayal with stops across the U.S., Australia
+                                  and Europe.
+                                type: text
+                                style: ''
+                                detail: 0
+                                format: 0
+                                version: 1
+                            direction: null
+                            textStyle: ''
+                            textFormat: 1
+                          - type: paragraph
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - mode: normal
+                                text: >-
+                                  You can win a guitar signed by Warren Zeiders!
+                                  When the show ends, head to the afterparty in
+                                  Tin Rooster Honky Tonk in Exit 33 to enter.
+                                  Must be present to win.
+                                type: text
+                                style: ''
+                                detail: 0
+                                format: 0
+                                version: 1
+                            direction: null
+                            textStyle: ''
+                            textFormat: 0
+                        direction: null
+            - _id: 51f45cd2-ea87-4062-ad2d-1369f226e32f
+              type: packagesCarousel
+              _pattern: 26d6d6de-051a-4314-8704-d7595652af53
+  _locales:
+    - en-US
+created: '2026-03-11T22:43:31.838276+00:00'
+modified: '2026-03-11T22:59:52.236436+00:00'
+pattern: false

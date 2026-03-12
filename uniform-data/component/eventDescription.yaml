@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: eventDescription
+name: Event Description
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title displayed above the description
+    localizable: true
+  - id: content
+    name: Content
+    type: richText
+    guidance: Full event description with formatting, links, and paragraphs
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: showShareSection
+    name: Show Share Section
+    type: checkbox
+    guidance: Whether to display the social share icons
+  - id: facebookUrl
+    name: Facebook URL
+    type: link
+    guidance: Facebook share link
+  - id: twitterUrl
+    name: Twitter URL
+    type: link
+    guidance: Twitter/X share link
+  - id: emailSubject
+    name: Email Subject
+    type: text
+    guidance: Subject line for email share
+    localizable: true
+description: >-
+  Displays rich text event description with an optional title and social share
+  section.
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-03-11T22:13:17.224792+00:00'
+updated: '2026-03-11T22:13:17.224792+00:00'

@@ -1,0 +1,100 @@
+composition:
+  _name: Golf Intro
+  _id: b7c0fd72-c093-4e9a-9f62-4d1586c5fd64
+  type: textWithButton
+  parameters:
+    body:
+      type: richText
+      locales:
+        en-US:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Stay in the game year-round at the Sportsplex at Turning
+                      Stone, featuring 17,000 square feet of short-game area and
+                      36 Trackman-enabled hitting stations. Tee off on our three
+                      award-winning public golf courses: Shenendoah, Kaluhyat,
+                      and Atunyote, which ranked in the top 10 on Golfweek's
+                      Best top casino courses.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+    heading:
+      type: text
+      locales:
+        en-US: Discover Championship Golf at Turning Stone Resort
+    subtitle:
+      type: text
+      locales:
+        en-US: Award-Winning Golf Courses in Upstate New York
+    buttonLink:
+      type: link
+      value:
+        path: /golf/book-fitting
+        type: url
+    buttonText:
+      type: text
+      locales:
+        en-US: Book a Fitting
+    footerText:
+      type: richText
+      locales:
+        en-US:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Plus, find all your golfing essentials at the Golf
+                      Superstore.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+    showAwards:
+      type: checkbox
+      value: 'true'
+  _overridability:
+    parameters:
+      body: 'yes'
+      heading: 'yes'
+      subtitle: 'yes'
+      buttonLink: 'yes'
+      buttonText: 'yes'
+      footerText: 'yes'
+      showAwards: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2026-03-12T10:34:21.1489+00:00'
+modified: '2026-03-12T10:34:21.1489+00:00'
+pattern: true

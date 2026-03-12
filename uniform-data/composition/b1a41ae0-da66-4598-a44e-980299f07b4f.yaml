@@ -1,0 +1,395 @@
+composition:
+  _name: Wedding Venues
+  _id: b1a41ae0-da66-4598-a44e-980299f07b4f
+  type: weddings
+  slots:
+    header:
+      - _id: 5060f950-9108-4226-9ce3-0f71aa57d85a
+        type: header
+        _pattern: 11111da4-0ef2-4225-a65d-6a7e05711478
+    content:
+      - _id: e53574b7-153b-4721-b052-78f8ee127ccb
+        type: venueHero
+        parameters:
+          title:
+            type: text
+            value: Wedding Venues
+          subtitle:
+            type: text
+            value: >-
+              Grand Expo Courtyard • Navajo Ballroom • Grand Ballroom •
+              Shenendoah Clubhouse • The Great Lawn • Cypress Ballroom • The
+              Ballroom • The Event Center • Exit 33
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Discover elegant wedding reception and ceremony
+                          locations nestled in the heart of Upstate NY, where
+                          stunning scenery and timeless charm create the perfect
+                          backdrop for your special day.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: ec3b49d4-980d-456b-bf4c-115a3c47b634
+        type: venueCard
+        parameters:
+          title:
+            type: text
+            value: The Grand Expo Courtyard
+          ctaText:
+            type: text
+            value: Let's Talk About Your Wedding
+          features:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - tag: ul
+                    type: list
+                    start: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - type: listitem
+                        value: 1
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Flexible layout options to fit your vision
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 2
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: >-
+                              Three unique spaces that can be segmented or
+                              combined
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 3
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Walkways and connectivity to indoor ballrooms
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                    listType: bullet
+                    direction: null
+                direction: null
+          subtitle:
+            type: text
+            value: Classic Outdoor Elegance
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          The Grand Expo Courtyard is a beautiful outdoor venue,
+                          featuring lush landscaping, elegant stone walkways,
+                          and numerous stunning photo opportunities. It's the
+                          perfect setting for wedding ceremonies, cocktail
+                          hours, or unforgettable first looks, offering a
+                          charming and romantic atmosphere for any celebration.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+          availabilityNote:
+            type: text
+            value: Available Labor Day 2026
+      - _id: f03be670-b876-4bce-92be-f4aded9b67e2
+        type: venueCard
+        parameters:
+          title:
+            type: text
+            value: Navajo Ballroom
+          ctaText:
+            type: text
+            value: Let's Talk About Your Wedding
+          features:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - tag: ul
+                    type: list
+                    start: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - type: listitem
+                        value: 1
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: 5,507 square feet that can be sectioned off
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 2
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Elegant modern design
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 3
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Floor-to-ceiling windows with courtyard views
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                    listType: bullet
+                    direction: null
+                direction: null
+          subtitle:
+            type: text
+            value: Refined and Romantic
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          The Navajo Ballroom is a picture-perfect setting,
+                          boasting soaring ceilings and expansive windows that
+                          overlook a beautifully landscaped courtyard. Flooded
+                          with natural light and filled with timeless charm,
+                          this elegant ballroom creates an inviting atmosphere
+                          for unforgettable celebrations.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+          availabilityNote:
+            type: text
+            value: Available Labor Day 2026
+      - _id: 8f9e2465-2037-48e7-9021-6d7443f262a4
+        type: venueCard
+        parameters:
+          title:
+            type: text
+            value: Grand Ballroom
+          ctaText:
+            type: text
+            value: Let's Talk About Your Wedding
+          features:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - tag: ul
+                    type: list
+                    start: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - type: listitem
+                        value: 1
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: 30,015 square feet of indoor space
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 2
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Sweeping ballroom with large adjoining terrace
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 3
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Floor-to-ceiling windows
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                      - type: listitem
+                        value: 4
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Connectivity to the entire resort
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                    listType: bullet
+                    direction: null
+                direction: null
+          subtitle:
+            type: text
+            value: Timeless, Opulent and Inviting
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          The Grand Ballroom is a versatile space ideal for
+                          hosting large wedding receptions, where guests can
+                          make dramatic entrances and enjoy a vibrant, packed
+                          dance floor. Full-height windows flood the room with
+                          natural light, while soaring ceilings adorned with
+                          cascading chandeliers create an ambiance of timeless
+                          elegance and sophistication, ensuring an unforgettable
+                          celebration.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+          availabilityNote:
+            type: text
+            value: Available Labor Day 2026
+  _overridability:
+    hideLockedParameters: true
+created: '2026-03-12T08:48:55.7085+00:00'
+modified: '2026-03-12T08:50:01.486711+00:00'
+pattern: false

@@ -1,0 +1,15 @@
+composition:
+  _name: Golf Hero
+  _id: 8b16913e-c0fe-4cfb-8f36-09a58fb0bb23
+  type: golfHero
+  parameters:
+    title:
+      type: text
+      value: Championship Golf
+  _overridability:
+    parameters:
+      title: 'yes'
+    hideLockedParameters: true
+created: '2026-03-12T10:33:01.138539+00:00'
+modified: '2026-03-12T10:33:01.138539+00:00'
+pattern: true

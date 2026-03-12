@@ -1,0 +1,14 @@
+composition:
+  _name: Event Detail Page
+  _id: b7b6492e-4f8b-4e31-b841-f2553e2da1b3
+  type: eventDetail
+  slots:
+    header:
+      - _id: fde26551-c4ba-4742-b9b8-ce45b34cb76c
+        type: header
+        _pattern: 11111da4-0ef2-4225-a65d-6a7e05711478
+  _overridability:
+    hideLockedParameters: true
+created: '2026-03-11T23:16:43.662559+00:00'
+modified: '2026-03-11T23:16:58.851376+00:00'
+pattern: false

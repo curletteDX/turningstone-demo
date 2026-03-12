@@ -40,7 +40,7 @@ export default function EventHero({ component }: EventHeroProps) {
 
           <div className="flex flex-col justify-center md:w-1/2">
             <h1 className="font-serif text-3xl text-[#8B7355] md:text-4xl lg:text-5xl">
-              <UniformText parameterId="title" placeholder="Event Title" />
+              <UniformText parameterId="title" placeholder="" />
             </h1>
 
             <div className="mt-6 space-y-2 text-gray-700">
